@@ -30,19 +30,22 @@ public class Ejercicio2 {
                 System.out.println("Si desea continuar presiona 's' y  para terminar presiona 'n'");
                 op = reader.next().charAt(0);
                 k=i;
-                }while((op == 's')||(op != 'n')||(pesototal > 18000));
+                }while((op == 's')&&(op != 'n')||(pesototal > 18000));
                 } catch (Exception e) {
             //System.out.println("");
         }
-        for(j=0; j<=k; j++){
+        for(j=0; j<=k-1; j++){
             mayor = bulto[k];
             menor = bulto[0];
-            if(bulto[j]>mayor){
+            if(bulto[j]>=mayor){
                 mayor = bulto[j];
+                //System.out.println(mayor);
             } 
             if(bulto[j] < menor){
                 menor = bulto[j];
-            }			
+                //System.out.println(menor);
+            }
+            System.out.println(j);
         }
         promedio = pesototal/i;
         dolar = total/3500; 
