@@ -39,13 +39,10 @@ public class Ejercicio2 {
             menor = bulto[0];
             if(bulto[j]>=mayor){
                 mayor = bulto[j];
-                //System.out.println(mayor);
             } 
             if(bulto[j] < menor){
                 menor = bulto[j];
-                //System.out.println(menor);
             }
-            System.out.println(j);
         }
         promedio = pesototal/i;
         dolar = total/3500; 
